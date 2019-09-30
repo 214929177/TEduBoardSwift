@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5fA-v0-h1N">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tic-7h-NhX">
+            <objects>
+                <viewController id="AiS-Km-vs5" customClass="LoginViewController" customModule="EDU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCs-iQ-aoK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qw-7v-xae" userLabel="UserIdView">
+                                <rect key="frame" x="15" y="118" width="384" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户ID：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3K-8L-1xh" userLabel="用户ID：">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bI2-Tf-0Eg">
+                                        <rect key="frame" x="68.5" y="0.0" width="315.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEF-iY-DmR">
+                                <rect key="frame" x="15" y="236" width="384" height="30"/>
+                                <state key="normal" title="进入教室"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="AiS-Km-vs5" eventType="touchUpInside" id="D8o-Da-VNF"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vke-a0-BGL" userLabel="UserIdView">
+                                <rect key="frame" x="15" y="172" width="384" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教室ID：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lY-Sp-vjT" userLabel="用户ID：">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入教室ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CTS-7b-3TE">
+                                        <rect key="frame" x="68.5" y="0.0" width="315.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="49N-DH-2M8" firstAttribute="trailing" secondItem="pEF-iY-DmR" secondAttribute="trailing" constant="15" id="8D7-id-gK9"/>
+                            <constraint firstItem="pEF-iY-DmR" firstAttribute="leading" secondItem="49N-DH-2M8" secondAttribute="leading" constant="15" id="A1I-kr-Zle"/>
+                            <constraint firstItem="49N-DH-2M8" firstAttribute="trailing" secondItem="vke-a0-BGL" secondAttribute="trailing" constant="15" id="Dcz-ee-6k5"/>
+                            <constraint firstItem="pEF-iY-DmR" firstAttribute="top" secondItem="vke-a0-BGL" secondAttribute="bottom" constant="30" id="Wg3-fP-rqy"/>
+                            <constraint firstItem="5qw-7v-xae" firstAttribute="leading" secondItem="49N-DH-2M8" secondAttribute="leading" constant="15" id="Zer-Y4-Dhf"/>
+                            <constraint firstItem="5qw-7v-xae" firstAttribute="top" secondItem="49N-DH-2M8" secondAttribute="top" constant="30" id="Ztv-Ea-reo"/>
+                            <constraint firstItem="vke-a0-BGL" firstAttribute="leading" secondItem="49N-DH-2M8" secondAttribute="leading" constant="15" id="hbB-8B-j3M"/>
+                            <constraint firstItem="vke-a0-BGL" firstAttribute="top" secondItem="5qw-7v-xae" secondAttribute="bottom" constant="20" id="kh4-bp-DCc"/>
+                            <constraint firstItem="49N-DH-2M8" firstAttribute="trailing" secondItem="5qw-7v-xae" secondAttribute="trailing" constant="15" id="ovK-e8-jSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="49N-DH-2M8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x1J-hY-wDF"/>
+                    <connections>
+                        <outlet property="classIDField" destination="CTS-7b-3TE" id="EEL-ka-DIh"/>
+                        <outlet property="joinClassButton" destination="pEF-iY-DmR" id="dm2-ki-ZPl"/>
+                        <outlet property="userIDField" destination="bI2-Tf-0Eg" id="2PG-Ws-iRr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHW-sE-JdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163.768115942029" y="665.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UpG-Xf-dQW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5fA-v0-h1N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o46-Wh-Bjb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AiS-Km-vs5" kind="relationship" relationship="rootViewController" id="Qb1-5n-lDt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eag-Vo-wP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253.62318840579712" y="665.625"/>
+        </scene>
+    </scenes>
+</document>
